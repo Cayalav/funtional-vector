@@ -45,4 +45,8 @@ def rest_btw_arr(arr_one, arr_two): #Resta entre arrays
 
 def most_frequent(arr_one): #Numero más repetido
     return(mode(arr_one)) 
-    
+
+def split_list(arr_one):
+    half = len(arr_one)//2
+    return arr_one[:half], arr_one[half:]
+
