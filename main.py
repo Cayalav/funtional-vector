@@ -1,9 +1,19 @@
-
-from random import randrange
 from funtions import *
 
-# Tallerarr2- Vectores - Carlos Ayala
+#Vectores - Carlos Ayala
 
+#Inicialización de variables
+def print_initial_variables(arr_one, arr_two):
+  print("-------VARIABLES INIT-------")
+  print("Array #1:")
+  print(arr_one)
+  print("\n") 
+  print("Array #2:")
+  print(arr_two)
+  print("\n") 
+  print("\n") 
+
+# Ejercicio 1
 def num_one(arr_one):
   print("-------EJERCICIO1-------")
   print("a. Sumatoria")
@@ -16,8 +26,7 @@ def num_one(arr_one):
   print(min(arr_one))
   print("\n") 
 
-#Ejercicioarr2
-#c. Cantidad de elementos primos
+#Ejercicio 2
 def num_two(arr_one):
   print("-------EJERCICIO2-------")
   print("a. Cantidad de elementos pares")
@@ -29,17 +38,22 @@ def num_two(arr_one):
   print("\n") 
 
 #Ejercicio 3
-#3. Dado un Vector arr1 y un Vector v2 de cómo resultado 
-#un Vector resultante de las siguientes operaciones:
-#a. Suma
-#b. Resta
 def num_three(arr_one, arr_two):
   print("-------EJERCICIO3-------")
-
+  arr_sum = sum_btw_arr(arr_one, arr_two)
+  arr_rest = rest_btw_arr(arr_one, arr_two)
+  print("a. Suma")
+  print(arr_sum)
+  print("b. Resta")
+  print(arr_rest)
+  print("\n")
+  
 #Ejercicio 4
-#4. De los n elementos de un vector dado identifique el número que mas se repite e indique cual es.
 def num_four(arr_one):
   print("-------EJERCICIO4-------")
+  num = most_frequent(arr_one)
+  print("a. Elemento más repetido")
+  print (num)
 
 #Ejercicio 5
 #5. Dado un Vect7or arr_one de longitud par, divida enarr2 partes, en la primera parte realice la productoria y en la segunda la sumatoria. Entregue los valores resultantes.
@@ -60,21 +74,10 @@ def num_six(arr_one):
 def num_seven(arr_one , arr_two):
   print("-------EJERCICIO7-------")
 
-def print_initial_variables(arr_one, arr_two):
-  print("-------VARIABLES INIT-------")
-  print("Array #1:")
-  for x in arr_one:
-    print(arr_one[x], end=' ')
-  print("\n") 
-  print("Array #2:")
-  for x in arr_two:
-    print(arr_two[x], end=' ')
-  print("\n") 
-  print("\n") 
 
 #Inicialización de los random
 n = 20  
-arr_one=random_arr(n);
+arr_one=random_arr(n)
 arr_two=random_arr(n)
 
 
@@ -83,5 +86,7 @@ print_initial_variables(arr_one, arr_two)
 
 
 #Resolución de incisos
-num_one(random_arr(n))
-num_two(random_arr(n))
+num_one(arr_one)
+num_two(arr_one)
+num_three(arr_one, arr_two)
+num_four(arr_one)

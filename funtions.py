@@ -1,4 +1,5 @@
 import numpy as np
+from statistics import mode 
 
 def random_arr(n): #Generador Array
   return np.random.randint(15, size=n) 
@@ -33,3 +34,15 @@ def prime_arr(num):
             else:
                 count+=1
     return count
+
+def sum_btw_arr(arr_one, arr_two): #Suma entre arrays
+  result =np.add(arr_one, arr_two)
+  return result
+
+def rest_btw_arr(arr_one, arr_two): #Resta entre arrays
+  result =np.subtract(arr_one, arr_two)
+  return result
+
+def most_frequent(arr_one): #Numero más repetido
+    return(mode(arr_one)) 
+    
