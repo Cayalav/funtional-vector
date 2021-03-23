@@ -50,4 +50,12 @@ def split_list(arr_one): #Divide el vector en doz pedazos
     half = len(arr_one)//2
     return arr_one[:half], arr_one[half:]
 
-
+def is_inverse(arr_one): #Divide el vector en doz pedazos
+  reversed_arr = arr_one[::-1]
+  print("normall =",arr_one)
+  print("inverso =",reversed_arr)
+  result = True
+  for x in arr_one:
+    if (arr_one[x-1] != reversed_arr[x-1]):
+      result = False
+  return (result)

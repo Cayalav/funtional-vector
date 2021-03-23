@@ -53,25 +53,33 @@ def num_five(arr_one): #Validad si es par
     print("b. Sumatoria =",sum(arr_sum))
   else:
     print("El array no tiene longitud par")
-    print("\n")
+  print("\n")
 
 #Ejercicio 6
-#6. Dado un vector arr_one, indique si es simétrico, un vector es simétrico si siendo longitud par los números de la primera mitad son iguales al inverso de la otra mitad por ejemplo: X=[1arr2,3,3arr2,1], en el ejemplo x es un vector simétrico, en caso que la longitud del vector sea impar, se ignorará el elemento central y se seguirá la misma lógica anterior, por ejemplo: Y=[3,5,7,8,7,5,3], en este ejemplo Y es simétrico.
 def num_six(arr_one):
+  arr_two = [1,2,3,4,3,2,1] # Prueba array
   print("-------EJERCICIO6-------")
-  if (len(arr_one)%2 == 0):
-    print("El array no tiene longitud par")
+  if (is_inverse(arr_two)):
+    print("El array es simetrico")
   else:
-    print("El array no tiene longitud par")
+    print("El array no es simetrico")
+  arr_two = [1,2,3,4,5,6,7]
+  if (is_inverse(arr_two)):
+    print("El array es simetrico")
+  else:
+    print("El array no es simetrico")
     print("\n")
 
 #Ejercicio 7
-#a. Unión sin repetición
-#b. Intersección
-#c. Diferencia(A-B) Conjunto formado por los elementos que pertenecen al conjunto A y no pertenecen al conjunto B.
-#d. Diferencia (B-A) Conjunto formado por los elementos que pertenecen al conjunto B y no pertenecel al conjunto A. 
+
 def num_seven(arr_one , arr_two):
   print("-------EJERCICIO7-------")
+  arr_one_set = set(arr_one)
+  arr_two_set = set(arr_two)
+  print("Unión =", (arr_one_set | arr_two_set))
+  print("Intersección =",(arr_one_set & arr_two_set))
+  print("A-B =",(arr_one_set - arr_two_set))
+  print("B-A =",(arr_two_set - arr_one_set))
 
 
 #Inicialización de los random
@@ -90,3 +98,5 @@ num_two(arr_one)
 num_three(arr_one, arr_two)
 num_four(arr_one)
 num_five(arr_one)
+num_six(arr_one)
+num_seven(arr_one, arr_two)
