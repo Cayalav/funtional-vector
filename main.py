@@ -43,7 +43,6 @@ def num_four(arr_one):
   print("\n")
 
 #Ejercicio 5
-#5. Dado un Vect7or arr_one de longitud par, divida enarr2 partes, en la primera parte realice la productoria y en la segunda la sumatoria. Entregue los valores resultantes.
 def num_five(arr_one): #Validad si es par
   print("-------EJERCICIO5-------")
   if (len(arr_one)%2 == 0):
@@ -67,7 +66,7 @@ def num_six(arr_one):
     print("\n")
 
 #Ejercicio 7
-#a. Unión
+#a. Unión sin repetición
 #b. Intersección
 #c. Diferencia(A-B) Conjunto formado por los elementos que pertenecen al conjunto A y no pertenecen al conjunto B.
 #d. Diferencia (B-A) Conjunto formado por los elementos que pertenecen al conjunto B y no pertenecel al conjunto A. 
