@@ -71,7 +71,6 @@ def num_six(arr_one):
     print("\n")
 
 #Ejercicio 7
-
 def num_seven(arr_one , arr_two):
   print("-------EJERCICIO7-------")
   arr_one_set = set(arr_one)
@@ -80,6 +79,7 @@ def num_seven(arr_one , arr_two):
   print("Intersección =",(arr_one_set & arr_two_set))
   print("A-B =",(arr_one_set - arr_two_set))
   print("B-A =",(arr_two_set - arr_one_set))
+
 
 
 #Inicialización de los random
